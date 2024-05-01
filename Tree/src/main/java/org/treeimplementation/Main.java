@@ -2,6 +2,9 @@ package org.treeimplementation;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Testing....");
+        Node node = new Node(4, null, null);
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.insert(8);
+
     }
 }
