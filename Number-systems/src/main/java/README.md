@@ -64,3 +64,64 @@ Positional notation is a method of representing numbers where the value of each 
 - https://www.youtube.com/watch?v=Xpk67YzOn5w
 - https://www.youtube.com/watch?v=zDNaUi2cjv4
 
+# Summary of the various number system conversions
+
+### Binary to Decimal
+- **Description**: Convert a binary (base-2) number to its decimal (base-10) representation.
+- **Method**: Iterate over each binary digit from right to left, multiplying by the corresponding power of 2. The total is the sum of these results.
+- **Example**: Binary "1101" to decimal is 1 x 2^3 + 1 x 2^2 + 0 x 2^1 + 1 x 2^0 = 8 + 4 + 0 + 1 = 13
+
+### Octal to Decimal
+- **Description**: Convert an octal (base-8) number to its decimal (base-10) representation.
+- **Method**: Iterate over each octal digit from left to right, multiplying by the corresponding power of 8, then sum the results.
+- **Example**: Octal "157" to decimal is 1 x 8^2 + 5 x 8^1 + 7 x 8^0 = 64 + 40 + 7 = 111.
+
+### Hexa to Decimal
+- **Description**: Convert a hexadecimal (base-16) number to its decimal (base-10) representation.
+- **Method**: Convert each hexadecimal digit to its decimal equivalent (using powers of 16), then sum the results.
+- **Example**: Hexadecimal "1A3F" to decimal is 1 x 16^3 + 10 x 16^2 + 3 x 16^1 + 15 x 16^0 = 4096 + 2560 + 48 + 15 = 6719.
+
+### Octal to Binary
+- **Description**: Convert an octal (base-8) number to a binary (base-2) representation.
+- **Method**: Convert each octal digit to its corresponding 3-bit binary representation.
+- **Example**: Octal "157" to binary is "001 101 111", resulting in "001101111".
+
+### Decimal to Binary
+- **Description**: Convert a decimal (base-10) number to a binary (base-2) representation.
+- **Method**: Use repeated division by 2 and collect the remainders. Read remainders from bottom to top.
+- **Example**: Decimal "10" to binary is 10 divided by 2 repeatedly, resulting in remainders 0, 1, 0, 1, yielding "1010".
+
+### Hexa to Binary
+- **Description**: Convert a hexadecimal (base-16) number to a binary (base-2) representation.
+- **Method**: Convert each hexadecimal digit to its corresponding 4-bit binary representation.
+- **Example**: Hexadecimal "1A3F" to binary is "0001 1010 0011 1111", resulting in "0001101000111111".
+
+### Binary to Octal
+- **Description**: Convert a binary (base-2) number to an octal (base-8) representation.
+- **Method**: Group the binary digits into sets of three and convert each group to its octal equivalent.
+- **Example**: Binary "110101101" to octal is "001 101 101", yielding octal "155".
+
+### Decimal to Octal
+- **Description**: Convert a decimal (base-10) number to an octal (base-8) representation.
+- **Method**: Use repeated division by 8, collect the remainders, and read them from bottom to top.
+- **Example**: Decimal "78" to octal is remainders 6, 1, 1, resulting in "116".
+
+### Hexa to Octal
+- **Description**: Convert a hexadecimal (base-16) number to an octal (base-8) representation.
+- **Method**: Convert hexadecimal to binary, then binary to octal.
+- **Example**: Hexadecimal "1A3F" to octal is converted to binary "0001101000111111", then grouped into sets of three to yield octal "15077".
+
+### Binary to Hexa
+- **Description**: Convert a binary (base-2) number to a hexadecimal (base-16) representation.
+- **Method**: Group binary digits into sets of four and convert each group to its hexadecimal equivalent.
+- **Example**: Binary "110101101110" to hexadecimal is "1101 0110 1110", yielding hexadecimal "D6E".
+
+### Octal to Hexa
+- **Description**: Convert an octal (base-8) number to a hexadecimal (base-16) representation.
+- **Method**: Convert octal to binary, then binary to hexadecimal.
+- **Example**: Octal "157" to hexadecimal is converted to binary "001101111", then converted to hexadecimal "37".
+
+### Decimal to Hexa
+- **Description**: Convert a decimal (base-10) number to a hexadecimal (base-16) representation.
+- **Method**: Use repeated division by 16, collect the remainders, and read them from bottom to top.
+- **Example**: Decimal "255" to hexadecimal results in remainders 15, 15, yielding hexadecimal "FF".
