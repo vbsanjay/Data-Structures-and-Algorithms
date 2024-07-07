@@ -6,24 +6,39 @@ public class Main {
 
         System.out.println("Enter your Binary Number");
         String binaryNumber = sc.next();
-        System.out.println("Binary to Decimal");
+        System.out.print("Binary to Decimal: ");
         System.out.println(BinaryConversion.binaryToDecimal(binaryNumber));
-        System.out.println("Binary to Octal");
+        System.out.print("Binary to Octal: ");
         System.out.println(BinaryConversion.binaryToOctal(binaryNumber));
-        System.out.println("Binary to Hexa");
+        System.out.print("Binary to Hexadecimal: ");
         System.out.println(BinaryConversion.binaryToHexadecimal(binaryNumber));
 
-//        System.out.println("Decimal to Binary");
-//        System.out.println("Decimal to Octal");
-//        System.out.println("Decimal to Hexa");
-//
-//        System.out.println("Octal to Binary");
-//        System.out.println("Octal to Decimal");
-//        System.out.println("Octal to Hexa");
-//
-//        System.out.println("Hexa to Binary");
-//        System.out.println("Hexa to Octal");
-//        System.out.println("Hexa to Hexa");
+        System.out.println("Enter your Decimal Number");
+        int decimalNumber = sc.nextInt();
+        System.out.print("Decimal to Binary: ");
+        System.out.println(DecimalConversion.decimalToBinary(decimalNumber));
+        System.out.print("Decimal to Octal: ");
+        System.out.println(DecimalConversion.decimalToOctal(decimalNumber));
+        System.out.print("Decimal to Hexadecimal: ");
+        System.out.println(DecimalConversion.decimalToHexadecimal(decimalNumber));
+
+        System.out.println("Enter your Octal Number");
+        String octalNumber = sc.next();
+        System.out.print("Octal to Binary: ");
+        System.out.println(OctalConversion.octalToBinary(octalNumber));
+        System.out.print("Octal to Decimal: ");
+        System.out.println(OctalConversion.octalToDecimal(octalNumber));
+        System.out.print("Octal to Hexadecimal: ");
+        System.out.println(OctalConversion.octalToHexadecimal(octalNumber));
+
+        System.out.println("Enter your Hexadecimal Number");
+        String hexadecimalNumber = sc.next();
+        System.out.println("Hexadecimal to Binary: ");
+        System.out.println(HexaConversion.hexaToBinary(hexadecimalNumber));
+        System.out.println("Hexadecimal to Octal: ");
+        System.out.println(HexaConversion.hexToOctal(hexadecimalNumber));
+        System.out.println("Hexadecimal to Decimal: ");
+        System.out.println(HexaConversion.hexToDecimal(hexadecimalNumber));
 
 
 
